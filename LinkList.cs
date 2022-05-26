@@ -117,6 +117,26 @@ namespace LinkListProblem
                 temp = null;
             }
         }
+        public void pop_back(int data)
+        {
+            if (this.head != null)
+            {
+                if (this.head.next == null)
+                {
+                    this.head = null;
+                }
+                else
+                {
+                    node temp = new node(data);
+                    temp = this.head;
+                    while (temp.next.next != null)
+                        temp = temp.next;
+                    node lastNode = temp.next;
+                    temp.next = null;
+                    lastNode = null;
+                }
+            }
+        }
     }
 
 }

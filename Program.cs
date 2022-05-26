@@ -28,9 +28,15 @@ namespace LinkListProblem
              linklist.InsertAtPerticularPosition(30, 2);
             linklist.Display();
             */
-            Console.WriteLine("Delete First element from Link List ");
-            linklist.pop_front();
+           // Console.WriteLine("Delete First element from Link List ");
+            //linklist.pop_front();
+            //linklist.Display();
+
+            
+            
+            linklist.pop_back(70);
             linklist.Display();
+
        
         }
 
